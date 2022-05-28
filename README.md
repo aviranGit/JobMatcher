@@ -9,12 +9,11 @@ Requirments-
 - MySQL 
 
 App Structure- 
-- The app name in the project is "jobmatcher"
 - There are three models:
   - Skill (attribute: name) 
   - Candidate (attributes: title, skills(ManyToMany))
   - Job (attributes: title, skills(ManyToMany))
-- The endpoint that search for best candidates is 'matcher/bestCandidates/' - which can be reach after clicking the "Search" button at home page.
+- The endpoint that search for best candidates is 'matcher/bestCandidates/' - which can be reach after clicking the "Search" button at home page. 
 
 Installing The App-
 
