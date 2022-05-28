@@ -3,7 +3,7 @@ Hi:)
 This simple app porpuse is to help you to find the best candidates for a given job.
 Each job and candidate has title and skills set.
 
-Getting Started:
+
 Requirments-
 - Pyton 
 - MySQL 
