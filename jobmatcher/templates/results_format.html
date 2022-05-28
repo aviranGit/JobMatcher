@@ -16,7 +16,7 @@
         <div>
             <h2>The Best Candidates for this job</h2>
             <br>
-            <h4>Job Details:</h4>
+            <h3>Job Details:</h3>
             <table>
                 <tr>
                     <th>ID</th>
@@ -33,7 +33,7 @@
         {% endif %}
         {% if candidate_list %}
         <div>
-            <h4>Best Candidates:</h4>
+            <h3>Best Candidates:</h3>
             <table>
                 <tr>
                     <th>ID</th>
@@ -54,7 +54,6 @@
         {% endif %}
         <br>
         <div class="job_not_exist">
-            <p>Click the button below to search candidates for another job</p><br>
             {% if not job_not_exist %}
                 <b><button onclick="location.href='{% url 'home_page' %}'">New Search</button></b>
             {% endif %}
