@@ -5,7 +5,15 @@ Each job and candidate has title and skills set.
 
 Getting Started:
 
-Install The App
+App Structure- 
+- The app name in the project is "jobmatcher"
+- There are three models:
+  - Skill (attribute: name) 
+  - Candidate (attributes: title, skills(ManyToMany))
+  - Job (attributes: title, skills(ManyToMany))
+- The endpoint that search for best candidates is 'matcher/bestCandidates/' - which can be reach after clicking the "Search" button at home page.
+
+Installing The App-
 
 1. Clone the repository.
 2. In matcher/setting.py - set your DB detail (NAME, USER, PASSWORD)
