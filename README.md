@@ -37,9 +37,11 @@ Play With The App:
 4. You will navigate to the result page. 
 5. Click "New Search" to re-search candidates for another job.
 
-Enjoy:)
+If you have any question or issues running the app, I would like to guide :) 
+(BTW, It's my first Django project)
 
-A little bit screenshots ☺️
+
+A little bit screenshots ☺️🎉
 
 <img width="569" alt="image" src="https://user-images.githubusercontent.com/62885985/170815785-afdafaae-c8b6-40a7-b521-1e7097e1ed8f.png">
 
