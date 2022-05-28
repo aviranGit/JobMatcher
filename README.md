@@ -27,7 +27,6 @@ Installing The App-
   3.3 "python manage.py runserver"
 5.The server will be running on http://127.0.0.1:8000/ (localhost port 8000)
 
-**I asked about the DB data and I didn't get answer yet, so I assume that you will be able to insert your data to check the app.
 
 Play With The App:
 
