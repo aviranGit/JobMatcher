@@ -3,11 +3,6 @@ Hi:)
 This simple app porpuse is to help you to find the best candidates for a given job.
 Each job and candidate has title and skills set.
 
-
-Requirments-
-- Pyton 
-- MySQL 
-
 App Structure- 
 - There are three models:
   - Skill (attribute: name) 
@@ -17,14 +12,24 @@ App Structure-
 
 Installing The App-
 
-1. Clone the repository.
-2. Install mysqlclient using - "pip install mysqlclient"
-3. In matcher/setting.py - set your DB detail (NAME, USER, PASSWORD) and save the file.
-4. run the following scripts:
+1. Clone the repository. run "git clone https://github.com/aviranGit/JobMatcher.git"
+2. Create your own virtual environment 
+  2.1 Run "python3 -n venv venv"
+  2.2 Run "source venv/bin/activate
+3. Install app requirements - run "pip install -r requirements.txt"
+4. Create MySQL database. 
+5. Create .env file in "matcher" folder and copy the following structure and fill the variables:
+
+DATABASE_NAME= ##YOUR DATABASE NAME##
+DATABASE_USER=##YOUR USERNAME##
+DATABASE_PASSWORD=##YOUR PASSWORD##
+
+(I didn't put the secret key in .env file to let you run the app quickly - hope it's fine🙂)
+7.  run the following scripts:
   3.1 "python manage.py makemigrations"
   3.2 "python manage.py migrate"
   3.3 "python manage.py runserver"
-5.The server will be running on http://127.0.0.1:8000/ (localhost port 8000)
+9.The server will be running on http://127.0.0.1:8000/ (localhost port 8000)
 
 
 Play With The App:
