@@ -9,11 +9,11 @@ body{
 }
 
 table {
-    width:120%; 
+    width:150%; 
     margin-left:50%; 
     margin-right:50%;
 }
-table, th, td {
+th, td {
     border: 1.5px solid black;
     border-collapse: collapse;
     padding: 15px;
@@ -37,10 +37,10 @@ button {
   font-size: 16px;
   margin-left: 30px;
 }
-
+/* 
 .job-not-exist{
     position: fixed;
     top:50%;
     left:50%;
-    transform: translate(-40%, -50%);
-}
+    transform: translate(-50%, -50%);
+} */
