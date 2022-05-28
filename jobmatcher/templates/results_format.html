@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Matcher</title>
+        <link rel="stylesheet" href="{% static 'css/results_page.css' %}">
+    </head>
+    <body>
+        {% if job_not_exist%}
+        <div class="job-not-exist">
+            <h2> The job does not exist in DB. Please try again</h2>
+            <b><button class="job_not_exist" onclick="location.href='{% url 'home_page' %}'">Try Again</button></b>
+        </div>
+        {%endif%}
+        {%if given_job %}
+        <div>
+            <h2>The Best Candidates for this job</h2>
+            <br>
+            <h4>Job Details:</h4>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Skills</th>
+                </tr>
+                <tr>
+                    <td>{{ given_job.id }}</td>
+                    <td>{{ given_job.title }}</td>
+                    <td>{{ job_skills }}</td>
+                </tr>   
+            </table>
+        </div>
+        {% endif %}
+        {% if candidate_list %}
+        <div>
+            <h4>Best Candidates:</h4>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Skills</th>
+                </tr>
+                {% for candidate in candidate_list %}
+                <tr>
+                    <td>{{ candidate.0.id }}</td>
+                    <td>{{ candidate.0.title }}</td>
+                    <td>{{ candidate.1 }}</td>
+                </tr>
+                {% empty %}
+                <h1> There is no relevant candidate for this job</h1>
+                {% endfor %}   
+            </table>
+        </div>
+        {% endif %}
+        <br>
+        <div class="job_not_exist">
+            <p>Click the button below to search candidates for another job</p><br>
+            {% if not job_not_exist %}
+                <b><button onclick="location.href='{% url 'home_page' %}'">New Search</button></b>
+            {% endif %}
+        </div>
+    </body>
+</html>

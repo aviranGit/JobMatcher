@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Matcher</title>
+        <link rel="stylesheet" href="{% static 'css/home_page.css' %}">
+    </head>
+    <body>
+    <center>
+        <div id='div-description'>
+            <h1>Welcome to Job Matcher</h1><br>
+            <p>The purpose of this app is to find the best candidate for a job.<br>
+            To search for candidates, please enter job id and click the button below</p><br>
+        </div>
+        <div class="home-page-form-div" style="style='width:150px; height:100px;">
+            <div class='input-form'>
+                <form class="form-inline" name="search" action="{% url 'get_candidates' %}" {{ form.as_p }} method="get">
+                    <input required name="job_id" class="form-control" type="number" placeholder="Enter Job ID" aria-label="Search" value="{{job_id}}">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>    
+            </div>
+        </div>
+    </center>
+    </body>
+</html>
+
+
+
